@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Nextwave.fm - Najlepsze Radio Internetowe</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <h1><img src="images/logo.png" alt="Nextwave.fm"></h1>
+            </div>
+            <div class="radio-wave">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+            <h2>Radio Nextwave.fm</h2>
+            <p>Ładowanie...</p>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo" data-aos="fade-right">
+                    <h1><img src="images/logo.png" alt="Nextwave.fm"></i> Nextwave.fm</h1>
+                </div>
+                <ul class="nav-menu" data-aos="fade-left">
+                    <li><a href="#home">Strona główna</a></li>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#schedule">Ramówka</a></li>
+                    <li><a href="#playlists">Playlisty</a></li>
+                    <li><a href="articles.html">Artykuły</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content" data-aos="zoom-in">
+                <h1>Radio Nextwave.fm</h1>
+                <p>Najlepsze radio internetowe z najnowszymi hitami i klasykami</p>
+                <div class="player-controls">
+                    <button class="play-btn" id="playBtn">
+                        <i class="fas fa-play"></i> Słuchaj teraz
+                    </button>
+                    <div class="now-playing">
+                        <span>Teraz gra:</span>
+                        <div class="track-info">
+                            <span class="artist">Artyści</span>
+                            <span class="title">Tytuł utworu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="equalizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 data-aos="fade-up">O Radio Nextwave.fm</h2>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <p>Radio Nextwave.fm to nowoczesne radio internetowe, które łączy najlepsze utwory z różnych gatunków muzycznych. Nasza misja to dostarczanie wysokiej jakości muzyki 24/7, wraz z ciekawymi audycjami i informacjami ze świata muzyki.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <h3>50K+</h3>
+                                <p>Słuchaczy</p>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-music"></i>
+                                <h3>10K+</h3>
+                                <p>Utworów</p>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <h3>24/7</h3>
+                                <p>Nadawanie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image" data-aos="fade-left">
+                        <img src="images/radio-studio.jpg" alt="Studio radiowe">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hot-news" class="hot-news">
+            <div class="container">
+                <h2 data-aos="fade-up">Gorące wydarzenia</h2>
+                <div class="hot-news-grid">
+                    <div class="hot-news-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="hot-news-image">
+                            <img src="images/7.jpg" alt="Nowy album">
+                        </div>
+                        <div class="hot-news-content">
+                            <h3>Hubert. w podróży - letnia trasa po Polsce.</h3>
+                            <p>Hubert. w podróży - letnia trasa po Polsce. Artysta zapowiedział letnią trasę po Polsce. Trasa ma się rozpocząć w maju i będzie trwać do czerwca...</p>
+                            <span class="hot-news-date">15.01.2025</span>
+                        </div>
+                    </div>
+
+                    <div class="hot-news-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="hot-news-image">
+                            <img src="images/8.jpg" alt="Festival">
+                        </div>
+                        <div class="hot-news-content">
+                            <h3>Pulp wraca po 24 latach recenzja płyty "More". </h3>
+                            <p>Pulp wraca po 24 latach recenzja płyty "More". Pulp wraca po 24 latach. Płyta "More" jest jedną z najważniejszych płyt w historii muzyki...</p>
+                            <span class="hot-news-date">14.01.2025</span>
+                        </div>
+                    </div>
+
+                    <div class="hot-news-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="hot-news-image">
+                            <img src="images/9.jpg" alt="Wywiad">
+                        </div>
+                        <div class="hot-news-content">
+                            <h3>"Labubu" od Ekipy – viralowy przebój czy muzyczny żart roku?</h3>
+                            <p>"Labubu" od Ekipy – viralowy przebój czy muzyczny żart roku? Ekipa zapowiada nowy album "Labubu". Płyta ma się pojawić w maju...</p>
+                            <span class="hot-news-date">13.01.2025</span>
+                        </div>
+                    </div>
+
+                    <div class="hot-news-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="hot-news-image">
+                            <img src="images/10.jpg" alt="Grammy">
+                        </div>
+                        <div class="hot-news-content">
+                            <h3>Addison Rae zaskakuje nowym singlem – influencerka czy już pełnoprawna artystka</h3>
+                            <p>Addison Rae zaskakuje nowym singlem – influencerka czy już pełnoprawna artystka. Addison Rae zaskakuje nowym singlem – influencerka czy już pełnoprawna artystka...</p>
+                            <span class="hot-news-date">12.01.2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent-news" class="recent-news">
+            <div class="container">
+                <h2 data-aos="fade-up">Aktualności</h2>
+                <div class="recent-news-grid">
+                    <div class="recent-news-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="recent-news-image">
+                            <img src="images/11.jpg" alt="OFF Festival 2025">
+                        </div>
+                        <div class="recent-news-content">
+                            <h3>OFF Festival 2025 - Rewolucja w polskiej scenie festiwalowej</h3>
+                            <p>Już w pierwszy weekend sierpnia zapraszamy na specjalne audycje poświęcone najciekawszemu festiwalowi alternatywnej sceny - OFF Festivalowi 2025! W dniach 1-3 sierpnia będziemy nadawać do was prosto <br>z festiwalu! W programie znajdziecie:
+
+                                Relację z Doliny Trzech Stawów w Katowicach – miejsce, które zamienia się w epicentrum muzycznych odkryć,,
+                                
+                                Omówienie headlinerów takich jak Kraftwerk, Fontaines D.C. i James Blake,,
+                                
+                                Przybliżmy też mniej oczywistych artystów jak Ecco2k, MJ Lenderman, Kneecap czy Two Shell.,
+                                
+                                Podczas naszych audycji znajdziecie również wywiady
+                                
+                                      z ekspertami oraz artystami, komentarze i recenzje oraz                  nasze zestawienie must see artystów!
+                                
+                            </p>
+                            <p>Emisja: 1-3 sierpnia w godzinach 15-18</p>
+                            
+                            <span class="recent-news-date">11.01.2025</span>
+                            <span class="recent-news-author">Autor: Maciej Kabaciński</span>
+                        </div>
+                    </div>
+
+                    <div class="recent-news-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="recent-news-image">
+                            <img src="images/12.jpg" alt="Hatsune Miku">
+                        </div>
+                        <div class="recent-news-content">
+                            <h3>Hatsune Miku powraca z przełomowym singlem - "Digital Dreams"</h3>
+                            <p>Hatsune Miku wraca z nowym albumem „Minukareteta”. Dostępny na wszystkich platformach streamingowych już 17 lipca.
+
+                            </p>
+                            
+                            
+                            
+                            <span class="recent-news-date">10.01.2025</span>
+                            <span class="recent-news-author">Autor: Gabriela Bielinowicz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="schedule">
+            <div class="container">
+                <h2 data-aos="fade-up">Ramówka</h2>
+                <div class="schedule-grid">
+                    <div class="schedule-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="time">06:00 - 10:00</div>
+                        <div class="show-info">
+                            <h3>Poranne Przebudzenie</h3>
+                            <p>DJ Anna Kowalska</p>
+                            <span class="genre">Pop, Rock</span>
+                        </div>
+                    </div>
+                    <div class="schedule-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="time">10:00 - 14:00</div>
+                        <div class="show-info">
+                            <h3>Hity Dnia</h3>
+                            <p>DJ Marek Nowak</p>
+                            <span class="genre">Top 40</span>
+                        </div>
+                    </div>
+                    <div class="schedule-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="time">14:00 - 18:00</div>
+                        <div class="show-info">
+                            <h3>Afternoon Vibes</h3>
+                            <p>DJ Kasia Wiśniewska</p>
+                            <span class="genre">Electronic, Chill</span>
+                        </div>
+                    </div>
+                    <div class="schedule-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="time">18:00 - 22:00</div>
+                        <div class="show-info">
+                            <h3>Wieczór z Muzyką</h3>
+                            <p>DJ Piotr Zieliński</p>
+                            <span class="genre">Jazz, Blues</span>
+                        </div>
+                    </div>
+                    <div class="schedule-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="time">22:00 - 02:00</div>
+                        <div class="show-info">
+                            <h3>Nocne Granie</h3>
+                            <p>DJ Tomasz Adamski</p>
+                            <span class="genre">Alternative, Indie</span>
+                        </div>
+                    </div>
+                    <div class="schedule-item" data-aos="fade-up" data-aos-delay="600">
+                        <div class="time">02:00 - 06:00</div>
+                        <div class="show-info">
+                            <h3>Nocne Melodie</h3>
+                            <p>Auto DJ</p>
+                            <span class="genre">Ambient, Lo-fi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Playlists Section -->
+        <section id="playlists" class="playlists">
+            <div class="container">
+                <h2 data-aos="fade-up">Playlisty Redaktorów</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Odkryj muzykę wybraną przez naszych redaktorów</p>
+                
+                <div class="playlists-grid">
+                    <div class="playlist-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="playlist-cover">
+                            <img src="images/1.jpg" alt="Hits 2024">
+                            <div class="playlist-overlay">
+                                <i class="fab fa-spotify"></i>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Hits 2024</h3>
+                            <p>Najlepsze utwory roku 2024</p>
+                            <span class="curator">Redaktor: Anna Kowalska</span>
+                            <a href="https://open.spotify.com/playlist/3u9PH8smDD14LMzhp6SMkz?si=a58e5315a8a54953" target="_blank" class="spotify-link">
+                                <i class="fab fa-spotify"></i> Otwórz w Spotify
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="playlist-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="playlist-cover">
+                            <img src="images/2.jpg" alt="Rock Classics">
+                            <div class="playlist-overlay">
+                                <i class="fab fa-spotify"></i>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Rock Classics</h3>
+                            <p>Nieśmiertelne klasyki rocka</p>
+                            <span class="curator">Redaktor: Kamil Kowalski</span>
+                            <a href="https://open.spotify.com/playlist/27kSF1CedbplsorXMJ7TcK?si=9ee27d8218d0438b" target="_blank" class="spotify-link">
+                                <i class="fab fa-spotify"></i> Otwórz w Spotify
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="playlist-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="playlist-cover">
+                            <img src="images/3.jpg" alt="Chill Vibes">
+                            <div class="playlist-overlay">
+                                <i class="fab fa-spotify"></i>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Chill Vibes</h3>
+                            <p>Relaksująca muzyka na wieczór</p>
+                            <span class="curator">Redaktor: Oliwier Drop</span>
+                            <a href="https://open.spotify.com/playlist/5MWJnY0ddGhNPfy1kWAFT1?si=1QH9goC5TL-sHknPJxwl3A" target="_blank" class="spotify-link">
+                                <i class="fab fa-spotify"></i> Otwórz w Spotify
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="playlist-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="playlist-cover">
+                            <img src="images/4.jpg" alt="Jazz Evening">
+                            <div class="playlist-overlay">
+                                <i class="fab fa-spotify"></i>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Jazz Evening</h3>
+                            <p>Najlepszy jazz na wieczór</p>
+                            <span class="curator">Redaktor: Maciej Kabaciński</span>
+                            <a href="https://open.spotify.com/playlist/7ojS2mhHsO4POZjETM9Lml?si=c3d8120f36614021" target="_blank" class="spotify-link">
+                                <i class="fab fa-spotify"></i> Otwórz w Spotify
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="playlist-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="playlist-cover">
+                            <img src="images/5.jpg" alt="Indie Discovery">
+                            <div class="playlist-overlay">
+                                <i class="fab fa-spotify"></i>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Indie Discovery</h3>
+                            <p>Odkryj nowe indie perełki</p>
+                            <span class="curator">Redaktor: Gabriela Bielinowicz</span>
+                            <a href="https://open.spotify.com/playlist/3u9PH8smDD14LMzhp6SMkz?si=a58e5315a8a54953" target="_blank" class="spotify-link">
+                                <i class="fab fa-spotify"></i> Otwórz w Spotify
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="playlist-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="playlist-cover">
+                                <img src="images/6.jpg" alt="Polish Music">
+                            <div class="playlist-overlay">
+                                <i class="fab fa-spotify"></i>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Polish Music</h3>
+                            <p>Najlepsza polska muzyka</p>
+                            <span class="curator">Redaktor: Dawid Dalidowski</span>
+                            <a href="https://open.spotify.com/playlist/3u9PH8smDD14LMzhp6SMkz?si=a58e5315a8a54953" target="_blank" class="spotify-link">
+                                <i class="fab fa-spotify"></i> Otwórz w Spotify
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles" class="articles">
+            <div class="container">
+                <h2 data-aos="fade-up">Artykuły</h2>
+                <div class="articles-grid">
+                    <article class="article-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="article-image">
+                            <img src="images/sam.jpg" alt="Artykuł o muzyce">
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Muzyka</span>
+                            <h3>Sam Fender - Głos współczesnej brytyjskiej młodzieży</h3>
+                            <p>Łączy rockową surowość z emocjonalną szczerością. Jego teksty...</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> 15.01.2024</span>
+                                <span><i class="fas fa-user"></i>Gabriela Bielinowicz</span>
+                            </div>
+                            <a href="articles.html#sam" class="read-more">Czytaj więcej</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="article-image">
+                            <img src="images/szczesny.jpg" alt="Wywiad">
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Wywiady</span>
+                            <h3>Szczęsny - Czy tylko piłakrz?</h3>
+                            <p>Nasz legendarny golkiper łapie nie tylko piłki - łapie też nuty! Zobacz, jak...</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> 12.01.2024</span>
+                                <span><i class="fas fa-user"></i>Oliwier Drop</span>
+                            </div>
+                            <a href="articles.html#szczesny" class="read-more">Czytaj więcej</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="article-image">
+                            <img src="images/igor.jpg" alt="Recenzja">
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Recenzje</span>
+                            <h3>Recenzja: "IGOR" - Tyler, The Creator</h3>
+                            <p>Powracamy do recenzji albumu "IGOR". Album ten jest jednym z najlepszych albumów...</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> 10.01.2025</span>
+                                <span><i class="fas fa-user"></i>Maciej Kabaciński</span>
+                            </div>
+                            <a href="articles.html#igor" class="read-more">Czytaj więcej</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-aos="fade-up">Kontakt</h2>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>kontakt@nextwave.fm</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Telefon</h3>
+                                <p>+48 123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Adres</h3>
+                                <p>ul. Radiowa 1, 00-001 Warszawa</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form" data-aos="fade-left">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Imię i nazwisko" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Temat">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Wiadomość" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Wyślij wiadomość</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Radio Nextwave.fm</h3>
+                    <p>Najlepsze radio internetowe z najnowszymi hitami i klasykami muzyki.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Szybkie linki</h3>
+                    <ul>
+                        <li><a href="#home">Strona główna</a></li>
+                        <li><a href="#about">O nas</a></li>
+                        <li><a href="#schedule">Ramówka</a></li>
+                        <li><a href="#playlists">Playlisty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Media społecznościowe</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/nextwave.fm"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/nextwave.fm"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nextwave.fm"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/nextwave.fm"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Radio Nextwave.fm. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
